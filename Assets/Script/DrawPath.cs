@@ -84,7 +84,7 @@ public class DrawPath : MonoBehaviour
 
     bool m_b_drew_map = false;
     int PATH_STEP = 1;
-    float PATH_WIDTH = 3.0f;
+    float PATH_WIDTH = 1.0f;
 
     Vector2 pt_start = new Vector2(0, 0);
     Vector2 pt_end = new Vector2(100, 100);

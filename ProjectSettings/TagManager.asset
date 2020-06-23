@@ -41,3 +41,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: PathMap
+    uniqueID: 3377704339
+    locked: 0

@@ -66,6 +66,7 @@ public class Drawing
         //  is centered on the origin at pointA.
         float scaler_x = (Math.Abs((pointB - pointA).magnitude) > 1) ? (pointB - pointA).magnitude : 1;
         GUIUtility.ScaleAroundPivot(new Vector2(scaler_x, width), new Vector2(pointA.x, pointA.y + 0.5f));
+        // GUIUtility.ScaleAroundPivot(new Vector2((pointB - pointA).magnitude, width), new Vector2(pointA.x, pointA.y + 0.5f));
 
         // Set the rotation for the line.
         //  The angle was calculated with pointA as the origin.
