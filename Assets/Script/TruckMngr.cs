@@ -44,11 +44,12 @@ public class TruckMngr : MonoBehaviour
         m_vehicle_states.Clear();
 
         AddTruck(12);
+        AddTruck(13);
     }
 
     private void Update()
     {
-        TempTest_GetNextPathPoint();
+        //TempTest_GetNextPathPoint();
 
         DrawTrucks();
     }
@@ -116,7 +117,7 @@ public class TruckMngr : MonoBehaviour
                 {
                     Vector2 real_pos = new Vector2((float)pair.Value.x, (float)pair.Value.y);
                     Vector2 gui_pos = MapBG.CoordTrans_TruckPos_Texture2D(real_pos);
-                    m_vehicle_states[vid] = new VehicleStates(gui_pos.x, gui_pos.y, pair.Value.heading + 90, pair.Value.current_path, pair.Value.request);
+                    m_vehicle_states[vid] = new VehicleStates(gui_pos.x, gui_pos.y, -1 * (pair.Value.heading + 90), pair.Value.current_path, pair.Value.request);
                 }
             }
         }

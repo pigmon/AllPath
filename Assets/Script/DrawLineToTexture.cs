@@ -61,7 +61,7 @@ public class DrawLineToTexture : MonoBehaviour
     /// 全部路径文件
     /// <VehicleID, FilePath>
     Dictionary<int, string> m_file_list = new Dictionary<int, string> {
-            { 567, @"D:\path\path567.txt" }, { 12, @"D:\path\path12.txt" }
+            { 12, @"D:\path\path12.txt" }, { 13, @"D:\path\path13.txt" }
         };
 
 
